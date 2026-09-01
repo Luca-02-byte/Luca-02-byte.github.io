@@ -11,9 +11,7 @@
 <body>
 
 <header class="hero">
-  <svg class="hero-line" viewBox="0 0 600 120" preserveAspectRatio="none">
-    <polyline points="0,90 80,60 160,75 240,20 320,50 400,10 480,40 560,25 600,35" />
-  </svg>
+  <canvas id="galton" width="600" height="260"></canvas>
   <div class="hero-content">
     <p class="eyebrow">Portfolio</p>
     <h1>Luca</h1>
@@ -29,6 +27,14 @@
       cosa cerchi (tesi, stage, collaborazioni). Parla in prima persona,
       in modo diretto.
     </p>
+  </section>
+
+  <section id="citazioni">
+    <blockquote id="quote-text">
+      «Tutti i modelli sono sbagliati, ma alcuni sono utili.»
+    </blockquote>
+    <p id="quote-author">— George E. P. Box</p>
+    <button id="next-quote">Prossima citazione →</button>
   </section>
 
   <section id="progetti">
@@ -70,5 +76,7 @@
   <p>&copy; 2026 Luca</p>
 </footer>
 
+<script src="script.js"></script>
+<script src="galton.js"></script>
 </body>
 </html>
