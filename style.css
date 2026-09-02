@@ -8,10 +8,23 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  background: var(--paper);
   color: var(--ink);
   font-family: 'IBM Plex Sans', sans-serif;
   line-height: 1.6;
+  background-color: var(--paper);
+  background-image: url('math-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(247, 248, 250, 0.93);
+  z-index: -1;
 }
 
 h1, h2, h3 {
